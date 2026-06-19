@@ -9,7 +9,7 @@ test('should login successfully', async ({page}) => {
   const button: Locator = page.getByRole('button', {name: 'Sign in to R B C Online Banking'});
   await expect(button).toBeVisible();
 
-  
+  This is my change for payments
 
 });
 
