@@ -1,0 +1,33 @@
+{
+  "valid_credentials": {
+    "username": "4519023348808468",
+    "password": "discovery",
+    "description": "Valid login credentials"
+  },
+  "invalid_username": {
+    "username": "invalid.user@example.com",
+    "password": "SecurePassword123!",
+    "description": "Invalid username - should show error"
+  },
+  "invalid_password": {
+    "username": "test.user@example.com",
+    "password": "WrongPassword123!",
+    "description": "Incorrect password - should show error"
+  },
+  "empty_credentials": {
+    "username": "",
+    "password": "",
+    "description": "Empty username and password"
+  },
+  "empty_username": {
+    "username": "",
+    "password": "SecurePassword123!",
+    "description": "Empty username only"
+  },
+  "empty_password": {
+    "username": "test.user@example.com",
+    "password": "",
+    "description": "Empty password only"
+  }
+
+}

@@ -1,0 +1,36 @@
+{
+  "name": "steroyalbank-automation",
+  "version": "1.0.0",
+  "description": "Playwright + TypeScript Automation Suite for SteroyalBank",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright test && playwright show-report",
+    "test:login": "playwright test tests/login.spec.ts",
+    "build": "tsc",
+    "clean": "rimraf dist reports",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\" \"data/**/*.json\""
+  },
+  "keywords": [
+    "automation",
+    "playwright",
+    "typescript",
+    "testing"
+  ],
+  "author": "QA Team",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.57.0",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1"
+  },
+  "dependencies": {}
+}
