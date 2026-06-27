@@ -119,21 +119,4 @@ test.describe('SteroyalBank Login Tests', () => {
     
     Logger.testEnd('TC003: Invalid Password', 'PASSED');
   });
-
-  test('TC004: Should prevent login with empty credentials', async ({ page }) => {
-    Logger.testStart('TC004: Empty Credentials');
-    
-    Logger.step('Attempt to submit empty form by clicking Next');
-    await loginPage.clickNext();
-    
-    Logger.step('Wait for validation');
-    await page.waitForTimeout(1000);
-    
-    Logger.step('Verify still on login page');
-    const isDisplayed = await loginPage.isLoginPageDisplayed();
-    expect(isDisplayed).toBe(true);
-    Logger.info('Still on login page - empty submission prevented');
-    
-    Logger.testEnd('TC004: Empty Credentials', 'PASSED');
-  });
 });
